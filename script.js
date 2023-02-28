@@ -34,7 +34,7 @@ frm.addEventListener("submit", (e) => {
         produto = frm.inputBebida.options[num].text;
     }
     const detalhes = frm.inputDetalhes.value;
-    itens.push(produto + "(" + detalhes + ")");
+    itens.push(produto + " (" + detalhes + ")");
     resp.innerText = itens.join("\n");
 
     frm.reset();
