@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Controle de Pedidos</title>
+</head>
+
+<body>
+    <h1>Controle de Pedidos</h1>
+    <hr>
+    <form>
+        <p>Item do pedido:
+            <input type="radio" name="produto" id="radioPrato" checked autofocus>Prato
+            <input type="radio" name="produto" id="radioBebida">Bebida
+            <span>Item:</span>
+            <select id="inputPrato">
+                <option value="entrada">Entrada</option>
+                <option value="principal">Prato Principal</option>
+                <option value="sobremesa">Sobremesa</option>
+            </select>
+            <select id="inputBebida" class="oculto">
+                <option value="refrigerante">Refrigerante 350 ml</option>
+                <option value="suco">Suco</option>
+                <option value="agua">Água</option>
+                <option value="vinho">Vinho</option>
+                <option value="cerveja">Cerveja</option>
+            </select>
+        </p>
+        <p>Detalhes do item:
+            <input type="text" id="inputDetalhes" class="detalhes">
+            <input type="submit" value="Adicionar">
+        </p>
+    </form>
+    <pre></pre>
+    <script src="script.js"></script>
+</body>
+
+</html>
